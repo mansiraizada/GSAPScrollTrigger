@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background-color: #e4daca;
+    font-family: "HM Sans Regular","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"MS Ｐゴシック","MS PGothic",sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left{
+    height: 100vh;
+    width: 50vw;
+    padding:2rem;
+}
+
+.left-top{
+    padding:2vw 2vw;
+    font-size: 4rem;
+}
+
+.rate-text{
+    font-size: 25px;
+}
+
+i{
+    font-size: 20px;
+    color: red;
+}
+
+.left-bottom{
+    padding: 5rem 2rem 0 2rem;
+}
+
+.left-bottom-colors{
+    width:fit-content;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding: 0.4rem ;
+    margin-left: 25px;
+    border-radius: 50px ;
+    border:0.1px solid black;
+}
+
+.left-bottom-colors .colors{
+    display: flex;
+    flex-direction: row;
+}
+
+.color1{
+    width: 1rem;
+    height:1rem;
+    margin:2px;
+    background-color: rgb(69, 209, 109);
+    border-radius: 50%;
+}
+
+.color2{
+    border-radius: 50%;
+    width: 1rem;
+    height:1rem;
+    margin:2px;
+    background-color: rgb(158, 92, 17);
+}
+.color3{
+    border-radius: 50%;
+    width: 1rem;
+    height:1rem;
+    margin:2px;
+    background-color: rgb(181, 77, 79);
+}
+
+.color4{
+    margin:2px;
+    border-radius: 50%;
+    width: 1rem;
+    height:1rem;
+    background-color: black;
+}
+
+.left-bottom .details{
+    padding:5rem 2rem;
+}
+
+.left-bottom .details h5{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.para-detail{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+    padding:2rem;
+   
+}
+
+.right .img{
+    width:100%;
+    height:100%;
+    border-radius: 12px;
+    background-image: url('./img.jpg');
+    background-size: cover;
+    
+}
+
+.rate-text{
+    padding:20px;
+}
+
+@media (max-width:600px){
+    .main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left{
+        padding:8px 22px 0 8px;
+        width: 100%;
+       
+    }
+    
+    .left-top{
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .rate-text{
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    i{
+        font-size: 18px;
+        color: red;
+        
+    }
+    .left-bottom{
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    .left-bottom-colors{
+        width:fit-content;
+        font-weight: 600;
+        font-size: 8px;
+        margin-bottom: 4px;
+        border-radius: 50px ;
+        border:0.1px solid black;
+    }
+    
+    .color1{
+        width: 10px;
+        height:10px;
+        margin:2px;
+        background-color: rgb(69, 209, 109);
+        border-radius: 50%;
+    }
+    
+    .color2{
+        border-radius: 50%;
+        width: 10px;
+        height:10px;
+        margin:2px;
+        background-color: rgb(158, 92, 17);
+    }
+    .color3{
+        border-radius: 50%;
+        width: 10px;
+        height:10px;
+        margin:2px;
+        background-color: rgb(181, 77, 79);
+    }
+    
+    .color4{
+        margin:2px;
+        border-radius: 50%;
+        width: 10px;
+        height:10px;
+        background-color: black;
+    }
+    
+    .left-bottom .details{
+        padding:1rem ;
+        
+    }
+    
+    .left-bottom .details h5{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    
+    .para-detail{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .right{
+        padding:8px;
+        width: 100%;
+        height:170%;
+       
+    }
+    
+    .right .img{
+        width:100%;
+        height:100%;
+        border-radius: 12px;
+        background-image: url('./img.jpg');
+        background-size: cover;
+        
+    }
+    
+    .rate-text{
+        padding:20px;
+    }   
+}
